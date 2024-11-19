@@ -10,19 +10,18 @@ body {
     background: url('arena.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: flex-start; 
     height: 100vh;
-    padding: 20px;
+    padding-top: 55vh; 
+    padding-left: 55vh;
+    padding-right: 55vh;
     text-align: center;
 }
 
 #player, #enemy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+    margin: 25vb;
 }
 
 .character {
@@ -35,8 +34,6 @@ body {
 }
 
 .stats {
-    display: flex;
-    align-items: center;
     margin-top: 10px;
 }
 
@@ -47,18 +44,18 @@ body {
 }
 
 #battleControls {
-    margin-top: 20px;
     text-align: center;
 }
 
 button {
     font-size: 18px;
-    padding: 10px 20px;
     background-color: #FF6F61;
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    margin: auto;
+    display:block;
 }
 
 button:hover {
