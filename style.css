@@ -20,10 +20,9 @@ body {
     text-align: center;
 }
 
-#player, #enemy {
+#playerHP, #enemyHP {
     margin: 25vb;
-    font-size: large;
-    text-align: center;
+    font-size: 5vb;
     text-shadow: 2px 2px red;
 }
 
@@ -33,28 +32,30 @@ body {
     border: 2px solid white;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
+    padding: 2vb;
 }
 
 .stats {
-    margin-top: 10px;
+    margin-top: 2vb;
+    align-items: center;
 }
 
 .icon {
-    width: 8vw;
-    height: 8vh;
+    width: 6vw;
+    height: auto;
     margin-right: 10px;
+    margin-top: 2vb;
 }
 
 #battleControls button {
     
-    margin: 5px;
-    padding: 10px;
+    margin: 1vb;
+    padding: 2vb;
 }
 
 #battleControls img {
-    width: 40px;
-    height: 40px;
+    width: 7vw;
+    height: 6vh;
     display: inline;
 }
 
@@ -72,4 +73,12 @@ button {
 
 button:hover {
     background-color: #FF3D2E;
+}
+
+#moveRightBtn,
+#moveLeftBtn {
+    float: left;
+    filter: grayscale(10%);
+    width: 15vw;
+    height: 5ch;
 }
