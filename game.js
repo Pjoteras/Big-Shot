@@ -1,6 +1,10 @@
 // Inicjalizacja statystyk
 let playerHP = 100;
 let enemyHP = 100;
+let playerPosition = 0;
+
+const minPosition = -150;
+const maxPosition = 150;
 
 // Funkcja ataku
 function attack() {
@@ -29,6 +33,23 @@ function attack() {
         resetGame();
     }
 }
+function movePlayer(direction) {
+    const playerElement = document.getElementById("player");
+    const step = 50; // Odległość ruchu w pikselach
+
+    if (direction === "left" && playerPosition > minPosition) {
+        playerPosition -= step;
+    } else if (direction === "right" && playerPosition < maxPosition) {
+        playerPosition += step;
+    }
+
+    // Aktualizacja pozycji CSS
+    playerElement.style.transform = `translateX(${playerPosition}px)`;
+}
+
+// Event listeners dla przycisków ruchu
+document.getElementById("moveLeftBtn").addEventListener("click", () => movePlayer("left"));
+document.getElementById("moveRightBtn").addEventListener("click", () => movePlayer("right"));
 
 // Funkcja resetująca grę
 function resetGame() {
