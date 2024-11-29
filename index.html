@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo"></div>
+        <div class="login"></div>
+        <div class="shop"></div>
+    </header>
+    
     <div id="arena">
-        <div id="player">
-            <img src="postac.jpg" alt="Postać gracza" class="character">
-            <div class="stats">
-                <img src="hp.png" alt="HP" class="icon">
-                <span id="playerHP">100</span>
-            </div>
-        </div>
         <div id="battleControls">
-
             <button id="startBtn">Start</button>    
             <button id="moveLeftBtn">
                 <img src="ruch_w_lewo.png" alt="Ruch w lewo">
@@ -24,15 +22,23 @@
             <button id="moveRightBtn">
                 <img src="ruch_w_prawo.png" alt="Ruch w prawo">
             </button>
-
             <button id="attackBtn">Atakuj!</button>
-            <p id="battleLog"></p>  
         </div>
-        <div id="enemy">
-            <img src="postac.jpg" alt="Postać przeciwnika" class="character">
-            <div class="stats">
-                <img src="hp.png" alt="HP" class="icon">
-                <span id="enemyHP">100</span>
+
+        <div class="characters">
+            <div id="player">
+                <img src="gosc.png" alt="Postać gracza" class="character">
+                <div class="stats">
+                    <img src="hp.png" alt="HP" class="icon">
+                    <span id="playerHP">100</span>
+                </div>
+            </div>
+            <div id="enemy">
+                <img src="boss.png" alt="Postać przeciwnika" class="character">
+                <div class="stats">
+                    <img src="hp.png" alt="HP" class="icon">
+                    <span id="enemyHP">100</span>
+                </div>
             </div>
         </div>
     </div>
