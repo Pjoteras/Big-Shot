@@ -14,6 +14,17 @@
     </header>
     
     <div id="arena">
+        <button id="axeAttackBtn" style="display: none;">Uderz siekierką</button>
+        <div id="coinTossModal" style="display: none;">
+            <div id="coinTossContainer">
+                <p>Wybierz: Orzeł czy Reszka?</p>
+                <button id="headsBtn">Orzeł</button>
+                <button id="tailsBtn">Reszka</button>
+            </div>
+        </div>        
+        <div id="battleLogContainer">
+            <div id="battleLog">Kliknij 'Start', aby rozpocząć!</div>
+        </div>
         <div id="battleControls">
             <button id="startBtn">Start</button>    
             <button id="moveLeftBtn">
@@ -30,14 +41,14 @@
                 <img src="gosc.png" alt="Postać gracza" class="character">
                 <div class="stats">
                     <img src="hp.png" alt="HP" class="icon">
-                    <span id="playerHP">100</span>
+                    <span id="playerHP">150</span>
                 </div>
             </div>
             <div id="enemy">
                 <img src="boss.png" alt="Postać przeciwnika" class="character">
                 <div class="stats">
                     <img src="hp.png" alt="HP" class="icon">
-                    <span id="enemyHP">100</span>
+                    <span id="enemyHP">150</span>
                 </div>
             </div>
         </div>

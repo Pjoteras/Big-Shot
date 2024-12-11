@@ -93,3 +93,63 @@ button:hover {
     height: auto;
     margin-right: 1vw;
 }
+
+#battleLogContainer {
+    width: 100%; 
+    margin-bottom: 2vh; 
+    display: flex;
+    justify-content: center; 
+}
+
+#battleLog {
+    font-size: 1.5vw; 
+    font-weight: bold;
+    color: #FFD700; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 1vw 2vw; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+
+#coinTossModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#coinTossContainer {
+    background-color: #fff;
+    color: black;
+    padding: 2vw;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#coinTossContainer button {
+    margin: 1vw;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    background-color: #FF6F61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#coinTossContainer button:hover {
+    background-color: #FF3D2E;
+}
+
+
+
+
